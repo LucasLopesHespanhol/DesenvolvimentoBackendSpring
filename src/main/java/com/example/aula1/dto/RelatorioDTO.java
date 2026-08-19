@@ -12,3 +12,5 @@ import lombok.Setter;
 public class RelatorioDTO {
     private String tipo;
 }
+
+//Fiz a parte para facilitar umas rotas
