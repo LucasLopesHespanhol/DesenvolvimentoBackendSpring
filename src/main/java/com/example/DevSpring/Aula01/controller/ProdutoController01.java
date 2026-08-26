@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/aula01-produto")
-public class ProdutoController {
+public class ProdutoController01 {
 
     @GetMapping
     public ResponseEntity<String> listarProdutos() {
