@@ -1,4 +1,4 @@
-package com.example.aula1.model;
+package com.example.DevSpring.Aula03.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -14,12 +14,11 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Cliente {
+public class Produto03 {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String nome;
-    private String senha;
-    private String email;
+    private Double preco;
 }

@@ -1,4 +1,4 @@
-package com.example.aula1.dto;
+package com.example.DevSpring.Aula02.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

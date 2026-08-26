@@ -1,4 +1,4 @@
-package com.example.aula1.controller;
+package com.example.DevSpring.Aula01.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -10,6 +10,7 @@ public class HelloController {
 
     @GetMapping
     public String sayHello() {
-        return "Salve!";
+        return "Hello, Spring Boot";
     }
+
 }

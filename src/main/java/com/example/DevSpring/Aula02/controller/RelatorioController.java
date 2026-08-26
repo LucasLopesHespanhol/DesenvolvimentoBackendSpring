@@ -1,12 +1,12 @@
-package com.example.aula1.controller;
+package com.example.DevSpring.Aula02.controller;
 
-import com.example.aula1.dto.RelatorioDTO;
+import com.example.DevSpring.Aula02.dto.RelatorioDTO;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping(
-        value = "/relatorios",
+        value = "/aula02-relatorio",
         method = RequestMethod.POST,
         consumes = "application/json",
         produces = "application/xml"

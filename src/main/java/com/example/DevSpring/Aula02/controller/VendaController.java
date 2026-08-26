@@ -1,16 +1,16 @@
-package com.example.aula1.controller;
+package com.example.DevSpring.Aula02.controller;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/vendas")
+@RequestMapping("/aula02-venda")
 public class VendaController {
 
     @GetMapping("/{id}")
     public ResponseEntity<String> listarVenda(@PathVariable Long id) {
-        return ResponseEntity.ok("Buscando Venda Com Id: " + id);
+        return ResponseEntity.ok("Buscando Venda Com Id : " + id);
     }
 
     @PostMapping

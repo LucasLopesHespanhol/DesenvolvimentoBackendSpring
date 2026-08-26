@@ -1,16 +1,15 @@
-package com.example.aula1.controller;
+package com.example.DevSpring.Aula02.controller;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.servlet.function.EntityResponse;
 
 @RestController
-@RequestMapping("/pedidos")
+@RequestMapping("/aula02-pedido")
 public class PedidoController {
 
     @GetMapping
     public ResponseEntity<String> listarPedidos() {
-       return ResponseEntity.ok("Listando Todos Os Produtos");
+       return ResponseEntity.ok("Listando Todos Os Pedidos");
     }
 
     @PostMapping
