@@ -9,7 +9,7 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class RelatorioDTO {
+public class RelatorioDTO02 {
     private String tipo;
 }
 

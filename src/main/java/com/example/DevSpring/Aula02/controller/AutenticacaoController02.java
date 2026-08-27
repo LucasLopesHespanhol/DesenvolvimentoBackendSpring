@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/aula02-autenticacao")
-public class AutenticacaoController {
+public class AutenticacaoController02 {
 
     @GetMapping("/login")
     public ResponseEntity<String> login(@RequestHeader("usuario") String usuario, @RequestHeader("senha") String senha){

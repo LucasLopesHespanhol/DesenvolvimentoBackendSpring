@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/aula02-venda")
-public class VendaController {
+public class VendaController02 {
 
     @GetMapping("/{id}")
     public ResponseEntity<String> listarVenda(@PathVariable Long id) {

@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/aula02-cliente")
-public class ClienteController {
+public class ClienteController02 {
 
     @GetMapping
     public ResponseEntity<String> buscarCliente(@RequestParam String nome, @RequestParam String cidade) {

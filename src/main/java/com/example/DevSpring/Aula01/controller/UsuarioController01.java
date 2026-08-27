@@ -4,7 +4,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/aula01-usuario")
-public class UsuarioController {
+public class UsuarioController01 {
 
     @GetMapping("/{id}")
     public String buscarPorId(@PathVariable Long id) {

@@ -3,11 +3,9 @@ package com.example.DevSpring.Aula02.controller;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
-
 @RestController
 @RequestMapping("/aula02-produto")
-public class ProdutoController {
+public class ProdutoController02 {
 
     @PutMapping("/{id}")    
     public ResponseEntity<String> atualizarProduto(@PathVariable Long id, @RequestBody String produtoAtualizado)  {

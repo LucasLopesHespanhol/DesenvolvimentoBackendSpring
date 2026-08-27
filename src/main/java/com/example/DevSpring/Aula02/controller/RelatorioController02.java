@@ -1,6 +1,6 @@
 package com.example.DevSpring.Aula02.controller;
 
-import com.example.DevSpring.Aula02.dto.RelatorioDTO;
+import com.example.DevSpring.Aula02.dto.RelatorioDTO02;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -11,10 +11,10 @@ import org.springframework.web.bind.annotation.*;
         consumes = "application/json",
         produces = "application/xml"
 )
-public class RelatorioController {
+public class RelatorioController02 {
 
     @PostMapping
-    public ResponseEntity<String> gerarRelatorio(@RequestBody RelatorioDTO relatorio) {
+    public ResponseEntity<String> gerarRelatorio(@RequestBody RelatorioDTO02 relatorio) {
         if(relatorio.getTipo().isBlank()) {
             return ResponseEntity.badRequest().body("Relatorio vazio");
         }
