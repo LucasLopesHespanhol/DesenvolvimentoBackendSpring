@@ -1,0 +1,16 @@
+info:
+  name: VendaGet
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: http://localhost:8080/aula02-venda/1
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

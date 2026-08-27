@@ -1,0 +1,7 @@
+info:
+  name: Aula03
+  type: folder
+  seq: 4
+
+request:
+  auth: inherit

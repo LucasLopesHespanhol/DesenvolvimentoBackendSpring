@@ -1,0 +1,23 @@
+info:
+  name: ProdutoPost
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:8080/aula03-produto
+  body:
+    type: json
+    data: |-
+      {
+        "nome": "maça",
+        "preco": 1.99
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

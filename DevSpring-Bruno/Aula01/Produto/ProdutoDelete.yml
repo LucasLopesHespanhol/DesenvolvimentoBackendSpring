@@ -1,0 +1,19 @@
+info:
+  name: ProdutoDelete
+  type: http
+  seq: 2
+
+http:
+  method: DELETE
+  url: http://localhost:8080/aula01-produto/1
+  body:
+    type: json
+    data: ""
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

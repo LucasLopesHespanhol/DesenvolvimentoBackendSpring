@@ -1,0 +1,23 @@
+info:
+  name: PedidoPost
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:8080/aula03-pedido
+  body:
+    type: json
+    data: |-
+      {
+        "descricao": "pedido realizado",
+        "data": "2026-08-30"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
