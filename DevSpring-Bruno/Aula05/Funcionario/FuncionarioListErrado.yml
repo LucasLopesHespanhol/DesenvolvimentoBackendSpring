@@ -1,0 +1,41 @@
+info:
+  name: FuncionarioListErrado
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: http://localhost:8080/aula05-funcionario/lote
+  body:
+    type: json
+    data: |-
+      [
+        {
+          "nome": "Lucas",
+          "salario": 2800.00,
+          "departamento": ""
+        },
+        {
+          "nome": "fernanda",
+          "salario": 4200.00,
+          "departamento": "rh"
+        },
+        {
+          "nome": "roberto",
+          "salario": 2500.00,
+          "departamento": "financeiro"
+        },
+        {
+          "nome": "beatriz",
+          "salario": 6000.00,
+          "departamento": "vendas"
+        }
+      ]
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

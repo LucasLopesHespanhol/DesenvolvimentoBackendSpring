@@ -1,0 +1,24 @@
+info:
+  name: Usuario
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:8080/aula05-usuario
+  body:
+    type: json
+    data: |-
+      {
+        "nome": "Lucas",
+        "senha": "123456",
+        "email": "lucas@gmail.com"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

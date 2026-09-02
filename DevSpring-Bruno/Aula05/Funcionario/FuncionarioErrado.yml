@@ -1,0 +1,24 @@
+info:
+  name: FuncionarioErrado
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:8080/aula05-funcionario
+  body:
+    type: json
+    data: |-
+      {
+        "nome": "maria",
+        "salario": 2200.00,
+        "departamento": "financeiro"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

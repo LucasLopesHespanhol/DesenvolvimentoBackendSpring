@@ -1,0 +1,41 @@
+info:
+  name: FuncionarioListCerto
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: http://localhost:8080/aula05-funcionario/lote
+  body:
+    type: json
+    data: |-
+      [
+        {
+          "nome": "Carlos",
+          "salario": 3200.00,
+          "departamento": "ti"
+        },
+        {
+          "nome": "Ana",
+          "salario": 4500.00,
+          "departamento": "rh"
+        },
+        {
+          "nome": "Pedro",
+          "salario": 2800.00,
+          "departamento": "financeiro"
+        },
+        {
+          "nome": "Juliana",
+          "salario": 5100.00,
+          "departamento": "marketing"
+        }
+      ]
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
